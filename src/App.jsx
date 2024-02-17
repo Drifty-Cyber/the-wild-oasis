@@ -1,11 +1,6 @@
 import styled from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
-
-const H1 = styled.h1`
-  font-size: 30px;
-  font-weight: 600;
-  background-color: yellow;
-`;
+import Heading from "./ui/Heading";
 
 const Button = styled.button`
   font-size: 1.2rem;
@@ -30,7 +25,7 @@ function App() {
     <>
       <GlobalStyles />
       <div>
-        <H1>The Wild Oasis</H1>
+        <Heading type="h1">The Wild Oasis</Heading>
         <Button>Check in</Button>
         <Input type="number" placeholder="Number of Guests" />
       </div>
