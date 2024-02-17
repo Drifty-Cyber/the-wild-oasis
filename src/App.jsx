@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 import Heading from "./ui/Heading";
+import Row from "./ui/Row";
 
 const Button = styled.button`
   font-size: 1.2rem;
@@ -24,11 +25,13 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <div>
-        <Heading type="h1">The Wild Oasis</Heading>
-        <Button>Check in</Button>
-        <Input type="number" placeholder="Number of Guests" />
-      </div>
+      <Row>
+        <div>
+          <Heading type="h1">The Wild Oasis</Heading>
+          <Button>Check in</Button>
+          <Input type="number" placeholder="Number of Guests" />
+        </div>
+      </Row>
     </>
   );
 }
