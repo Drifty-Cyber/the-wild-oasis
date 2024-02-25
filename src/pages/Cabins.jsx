@@ -6,7 +6,8 @@ import Button from "../ui/Button";
 import CreateCabinForm from "../features/cabins/CreateCabinForm";
 
 function Cabins() {
-  const [showForm, setShowForm] = useState();
+  const [showForm, setShowForm] = useState(false);
+
   return (
     <>
       <Row type="horizontal">
@@ -18,7 +19,7 @@ function Cabins() {
         <CabinTable />
 
         <Button onClick={() => setShowForm((show) => !show)}>
-          Add new cabin
+          {showForm ? "Collapse form" : "Add new cabin"}
         </Button>
         {showForm && <CreateCabinForm />}
       </Row>
