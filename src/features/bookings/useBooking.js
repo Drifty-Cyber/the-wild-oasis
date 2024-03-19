@@ -15,5 +15,8 @@ export function useBooking() {
     retry: false, //Stop trying to fetch data after first failed attempt
   });
 
+  // console.log(bookingId);
+  console.log(booking);
+
   return { booking, isLoading, error };
 }

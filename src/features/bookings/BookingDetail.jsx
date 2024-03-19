@@ -26,6 +26,7 @@ function BookingDetail() {
   if (isLoading) return <Spinner />;
 
   const { status, id: bookingId } = booking;
+  // console.log(status);
 
   const statusToTagName = {
     unconfirmed: "blue",
