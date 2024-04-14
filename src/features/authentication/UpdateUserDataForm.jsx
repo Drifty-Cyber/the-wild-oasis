@@ -29,6 +29,7 @@ function UpdateUserDataForm() {
       <FormRow label="Email address">
         <Input value={email} disabled />
       </FormRow>
+
       <FormRow label="Full name">
         <Input
           type="text"
@@ -37,6 +38,7 @@ function UpdateUserDataForm() {
           id="fullName"
         />
       </FormRow>
+
       <FormRow label="Avatar image">
         <FileInput
           id="avatar"
@@ -44,6 +46,7 @@ function UpdateUserDataForm() {
           onChange={(e) => setAvatar(e.target.files[0])}
         />
       </FormRow>
+
       <FormRow>
         <Button type="reset" variation="secondary">
           Cancel

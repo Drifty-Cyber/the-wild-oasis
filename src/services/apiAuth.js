@@ -47,3 +47,9 @@ export async function logout() {
 
   if (error) throw new Error(error.message);
 }
+
+export async function updateCurrentUser({ password, fullName, avatar }) {
+  // 1) Update password || fullName
+  // 2) Upload avatar
+  // 3) Update avatar in the user
+}
