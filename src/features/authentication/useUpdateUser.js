@@ -7,8 +7,13 @@ export function useUpdateUser() {
 
   const { mutate: updateUser, isLoading: isUpdating } = useMutation({
     mutationFn: updateCurrentUser,
-    onSuccess: () => {
+    onSuccess: ({ user }) => {
       toast.success("User account successfully updated");
+      // console.log(data);
+
+      // Force update user image on dashboard header if updated
+      // queryClient.setQueryData("user", user);
+
       queryClient.invalidateQueries({
         queryKey: ["user"],
       });
