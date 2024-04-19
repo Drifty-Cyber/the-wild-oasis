@@ -12,11 +12,11 @@ export function useUpdateUser() {
       // console.log(data);
 
       // Force update user image on dashboard header if updated
-      // queryClient.setQueryData("user", user);
+      queryClient.setQueryData(["user"], user);
 
-      queryClient.invalidateQueries({
-        queryKey: ["user"],
-      });
+      // queryClient.invalidateQueries({
+      //   queryKey: ["user"],
+      // });
     },
     onError: (err) => toast.error(err.message),
   });
