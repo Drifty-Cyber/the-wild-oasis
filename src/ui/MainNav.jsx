@@ -3,8 +3,6 @@ import {
   HiOutlineCog6Tooth,
   HiOutlineHome,
   HiOutlineHomeModern,
-  HiOutlineServer,
-  HiOutlineUser,
   HiOutlineUsers,
 } from "react-icons/hi2";
 import styled from "styled-components";
